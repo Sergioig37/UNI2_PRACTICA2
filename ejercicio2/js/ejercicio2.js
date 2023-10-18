@@ -28,10 +28,12 @@ class Instituto{
 
     conocerNumeroTotalAlumnos(){
         var totalAlumnos = 0;
-
-        this._gruposInstituto.forEach(grupo => {
+        if(this.GruposInstituto.length!=0){
+             this._gruposInstituto.forEach(grupo => {
             totalAlumnos += grupo.numeroAlumnos;
         });
+        }
+       
         return totalAlumnos;
     }
 }
@@ -67,6 +69,7 @@ var grupo1 = new Grupo("324132r", 40);
 var grupo2 = new Grupo("32657", 40);
 var grupo3 = new Grupo("132r", 20);
 var grupo4 = new Grupo("41r",50);
+console.log(fleming.conocerNumeroTotalAlumnos());
 console.log(fleming.CodigoInstituto);
 fleming.addGrupos(grupo1);
 console.log(fleming.conocerNumeroTotalAlumnos());
