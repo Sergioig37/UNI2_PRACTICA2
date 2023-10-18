@@ -4,6 +4,7 @@ function separarNumeros(){
     var numeros = [];
 
     parseInt(numero);
+    
     for(let i=0; i<arguments.length;i++){
         if(typeof(arguments[i])==typeof(numero)){
             numeros.push(arguments[i]);
