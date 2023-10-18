@@ -1,10 +1,11 @@
 function separarNumeros(){
-
+    
     var numero = 1;
     var numeros = [];
+
     parseInt(numero);
     for(let i=0; i<arguments.length;i++){
-        if(!isNaN(arguments[i])){
+        if(typeof(arguments[i])==typeof(numero)){
             numeros.push(arguments[i]);
         }
     }
